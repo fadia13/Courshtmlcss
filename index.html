@@ -1,11 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Cours </title>
 </head>
+
 <body>
-    
+
+    <header> <!-- sémantique  -->
+
+        <!-- point de chut de mon ancre -->
+        <p id="haut"> Vous êtes arrivé</p>
+
+        <p>Retourner en bas <a href="#bas"> cliquez ici</a> </p>
+
+
+
+        <!-- barre de navigation  -->
+        <nav>
+            <!-- liste non ordonnée  -->
+
+            <ul>
+                <li>Accueil</li>
+                <li>Produit</li>
+                <li>Contact</li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main> <!-- sémantique  -->
+        <section><!-- sémantique  -->
+            <!-- liste ordonnée  -->
+            <ol>
+                <li>Pomme</li>
+                <li>Poire</li>
+                <li>Banane</li>
+            </ol>
+
+            <!-- classement par ordre alphabétique -->
+            <ol type="A">
+                <li>Pomme</li>
+                <li>Poire</li>
+                <li>Banane</li>
+            </ol>
+
+            <!-- classement en chiffre romain -->
+            <ol type="I">
+                <li>Pomme</li>
+                <li>Poire</li>
+                <li>Banane</li>
+                <li>Fraise</li>
+            </ol>
+
+            <!-- Inverser l'odre de classement -->
+            <ol reversed>
+                <li>Pomme</li>
+                <li>Poire</li>
+                <li>Banane</li>
+                <li>Fraise</li>
+            </ol>
+
+            <!-- Choix du nombre de déart -->
+            <ol start="10" reversed>
+                <li>Pomme</li>
+                <li>Poire</li>
+                <li>Banane</li>
+                <li>Fraise</li>
+            </ol>
+
+            <hr>
+            <h2>Liste imbriquée</h2>
+
+            <ul>
+                <li>Pomme
+                    <ol>
+                        <li>Verte</li>
+                        <li>Rouge</li>
+                        <li>Jau</li>
+                    </ol>
+                </li>
+                <li>Poire</li>
+                <li>Banane</li>
+            </ul>
+
+
+            <!-- exemple  -->
+
+            <ol type="A">
+                <li>Mon titre 1
+                    <ol>
+                        <li>Mon sous-titre</li>
+                        <li>Mon sous-titre</li>
+                        <li>Mon sous-titre</li>
+                    </ol>
+                </li>
+                <li>Mon titre 2</li>
+                <li>Mon titre 3</li>
+
+            </ol>
+
+
+            <hr>
+        </section>
+
+        <section>
+
+            <h1>Différents niveaux de titre</h1>
+            <h1 style="background-color: red">T ITRE 1</h1>
+            <h2>TITRE 2</h2>
+            <h3>TITRE 3</h3>
+            <h4>TITRE 4</h4>
+            <h5>TITRE 5</h5>
+            <h6>TITRE 6</h6>
+
+        </section>
+        <hr>
+        <h2>Les paragraphes</h2>
+
+        <p>Mo, paragrapne n°1</p>
+        <p>Mo, paragrapne n°2</p>
+        <p>Mo, paragrapne n°3</p>
+
+        <hr>
+        <h2>Les div</h2>
+
+        <div style="background-color: blue;">
+            <p>Mo, paragrapne n°1</p>
+            <p>Mo, paragrapne n°2</p>
+            <p>Mo, paragrapne n°3</p>
+
+
+        </div>
+        <hr>
+
+        <!-- balise sémantique  -->
+
+        <p>ceci est un mot <strong> important</strong> et celui là <em>auss</em>i</p>
+
+        <p>c'est un mot <b>en gras</b> et un mot en <i>italique</i>
+
+
+            <hr>
+        <p>pour aller sur amzon <a href="https://www.amazon.fr/ref=nav_logo"> cliquez ici </a></p>
+
+        <h2>Les liens</h2>
+
+        <!-- ouverture d'autant d'onglet que de clique -->
+
+        <p>pour aller sur amzon <a href="https://www.amazon.fr/ref=nav_logo" target="_blank"> cliquez ici </a></p>
+
+        <!-- ouverture d'un onglet -->
+
+        <p>pour aller sur amzon2 <a href="https://www.amazon.fr/ref=nav_logo" target="blank"> cliquez ici2 </a></p>
+
+
+        <hr>
+
+        <h2>Ancre</h2>
+
+        <!-- point de dé<>rt de mon ancre  -->
+
+        <p>Retourner en haut <a href="#haut"> cliquez ici</a> </p>
+
+        <p id="bas"> Vous êtes arrivé</p>
+
+
+        <hr>
+        <h2>Les images</h2>
+
+        <!-- title => affiche une infos bulle  -->
+        <!-- width => pour jouer sur la largeur de l'image -->
+        <img src="https://www.la-spa.fr/app/app/uploads/2023/07/prendre-soin_duree-vie-chat.jpg" alt="chat"
+            title="mon chat" height="500" width="100">
+
+        <!-- image est au même niveau que l'index on indique le nom -->
+        <img src="lion.jpg" alt="lion">
+        
+        <!-- image se trouve dans un autre dossier -->
+        <img src="EXO1/puma.jpg" alt="puma">
+
+
+        <a href="https://www.amazon.fr/ref=nav_logo" target="_blank" > <img src="lion.jpg" alt="lion">  </a>
+
+        <hr>
+
+        <h2>Insérer une vidéo</h2>
+        <!-- controls => afficher le cadre de la video  -->
+        <!-- poster =>afficher une image avant le demarrage de la video -->
+        <!-- autoplay => demarrage automatique de la video (pas recomandé) -->
+        <!-- loop => la vidéo tourne en boucle -->
+
+        <video src="videocoq.mp4" poster="lion.jpg" loop autoplay >controls
+            
+        </>"controls></video>
+
+    <hr>
+    <h2>Insérer une video Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gtIC-Yn_pb8?si=eHTlvZHL2rJrw3ZT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <hr>
+
+
+
+        <hr>
+        <h2>Le svg</h2>
+        <svg width="300">
+            <rect width="100%" height="100%" fill="green"></rect> 
+        </svg>
+
+
+
+
+
+    </main>
+    <footer>
+        <p>Mon pied de page</p>
+
+
+    </footer>
+
+
 </body>
+
 </html>
