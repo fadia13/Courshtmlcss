@@ -212,9 +212,104 @@
             <rect width="100%" height="100%" fill="green"></rect> 
         </svg>
 
+        <hr>
+        <h2>Les formulaires</h2>
+
+        <form action="envoi.php" method="post">
+            <label for="">genre :</label> <br>
+            <!-- bouton radio => choix unique  -->
+            <label for="genre">F</label><input type="radio" name="genre" required>
+            <label for="genre">H</label><input type="radio" name="genre"><br>
+
+              <!-- bouton checkbox => choix multiple  -->
+              <label for="">fruits préférés :</label>
+              <label for="">Banane</label>
+              <input type="checkbox" checked>
+              <label for="">Pomme</label>
+              <input type="checkbox" >
+              <label for="">Fraise</label>
+              <input type="checkbox" ><br>
+
+              <!-- liste deroulante -->
+              <label for="">Pays préférés :</label>
+              <select name="" >
+                <option value="" disabled selected> Pays</option>
+                <option value=""> Espage</option>
+                <option value="">France </option>
+                <option value=""> Canada</option>
+
+              </select><br><br>
 
 
 
+
+            <label for="">Nom</label>
+            <!-- required => indique que le champs est obligatoire -->
+            <input type="text" placeholder="Votre nom" required>
+
+            <label for="">Email</label>
+            <input type="email" required>
+
+            <label for="">Date de naissance</label>
+            <input type="date">
+
+            <label for="">Mot de passe</label>
+            <input type="password">
+
+            <label for="">Sélectionner une couleur</label>
+            <input type="color">
+
+            <label for="">Recherche</label>
+            <input type="search">
+
+            <label for="">Recherche</label>
+            <input type="range"> <br> <br>
+
+            <textarea  cols="70" rows="20"></textarea>
+
+            <!-- value permet de modifier la valeur par défaut du bouton -->
+            <input type="submit" value="cliquer" >
+
+            <input type="reset" value="effacer" >
+
+
+        </form>
+
+        <!-- Les tableaux  -->
+
+        <style>
+            table{
+                border-collapse: collapse;
+            }
+
+            tr, td , th{
+                border: 2px solid black;
+            }
+        </style>
+
+        <table>
+            <caption>Titre de mon tableau</caption>
+            <tr>
+                <th>Nom</th>
+                <th>Age</th>
+                <th>Pays</th>
+            </tr>
+            <tr>
+                <td>Marie</td>
+                <td> 26 ans</td>
+                <td> France</td>
+
+            </tr>
+
+            <tr>
+                <td>Pierre</td>
+                <td> 50 ans</td>
+                <td> Espagne</td>
+            </tr>
+
+        </table>
+
+    <hr>
 
     </main>
     <footer>
