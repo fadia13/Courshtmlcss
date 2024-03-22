@@ -1,0 +1,59 @@
+
+.flex__container{
+    /* utilisation de la methode flex  */
+    display: flex;
+/***************** direction ************* */
+    /* disposition en ligne  */
+    flex-direction: row;
+    /* inverser le sens de la ligne  */
+    /* flex-direction: column-reverse; */
+       /* disposition en colonne */
+    /* flex-direction: column; */
+    /* inverser le sens de la colonne  */
+    /* flex-direction: column-reverse; */
+/***************** Positionnement sur la page ************* */
+    /* positionner les éléments sur la droite  */
+    justify-content:flex-end;
+    /* positionner les éléments sur la gauche */
+    justify-content:flex-start;
+    /* créer un espace entre les éléments sans marge  */
+    justify-content:space-between;
+    /* créer un espace entre les éléments avec une marge  */
+    justify-content:space-around;
+
+/***************** retour à la ligne ************* */
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+
+}
+
+
+.flex__item{
+    width: 20%;
+    min-width: 400px;
+    height: 20vh;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1%;
+   
+
+
+}
+
+.item1{
+    background-color: red;
+     
+}
+
+.item2{
+    background-color: rgb(37, 208, 94);
+}
+
+.item3{
+    background-color: rgb(111, 173, 243);
+}
+
+.item4{
+    background-color: rgb(238, 158, 195);
+}

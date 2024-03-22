@@ -1,0 +1,84 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100VW;
+  
+}
+
+/* header */
+header{
+    display: grid;
+    background-color: bisque;
+    text-align: center;
+}
+
+nav{
+    grid-column: 1/-1;
+}
+
+
+
+/* mmain */
+
+main{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+/* aside */
+
+.aside_left, .aside_right{
+    background-color: brown;
+
+}
+
+.aside_left h2{
+   text-align: center;
+    margin-top: 100%;
+
+}
+
+
+
+/* section portfolio  */
+
+.portfolio h2{
+    text-align: center;
+    
+}
+.portfolio_img{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+img{
+    width: 30%;
+    min-width: 200px;
+}
+
+.aside_right h2{
+    margin-top: 50%;
+    margin-top: 100%;
+    text-align: center;
+}
+
+/* footer */
+
+footer{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.footer_h3{
+    background-color: beige;
+    text-align: center;
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+ 
+}

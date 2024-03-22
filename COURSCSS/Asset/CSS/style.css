@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+/* *****************SELECTEUR */
+/* selecteur universel  */
+/* *{
+    /* margin: 0;
+    padding: 0; 
+    
+} */
+/* selection par nom de balise */
+
+/*********************************HEADER ************************/
+
+nav{
+    background-color: black;
+    padding: 20px;
+}
+
+ul{
+    /*supprimer les puces */
+    list-style-type: none;
+      /* marge interne  */
+      /* 1 valeur => 4cotés */
+    /* padding: 100px; */
+    /* haut&bas/ gauche&droite  */
+    /* padding: 500px 200px; */
+    /* haut /droite &et gauche/ bas  */
+    /* padding: 500px 200px 50px; */
+    /* padding-top: 200px; */
+       /* padding-left: 100px; */
+       /* padding-right: 100px; */
+       /* padding-bottom: 100px; */
+
+}
+
+li{
+    /* afficher en ligne  */
+    display: inline;
+    /* marge interne  */
+     padding: 150px;
+     font-size: 1.5rem;
+    /* padding: 800px 200px; */
+
+}
+
+ /* selection descendante  */
+li a {
+    /* changer la couleur du texte  */
+    color: white;
+    /* couleur=> jouer sur la transparence */
+    /* color: rgb(242, 48, 48); */
+    /* couleur hexadecimal */
+    /* color: #36AFF8; */
+    text-decoration: none;
+
+}
+
+
+li a:hover{
+    /* couleur fond  */
+    background-color: white;
+    /* couleur du texte */
+    color: black;
+    padding: 20px;
+
+    /* mettre en gras  */
+    font-weight: bold;
+    /* mettre en italique */
+    font-style: italic;
+
+}
+
+/*********************************MAIN ************************/
+/* selection par class*/
+/* héritage */
+.main__header{
+    text-align: center;
+    /* text-align: left; */
+    /* text-align: right; */
+    font-size: 1.5rem;
+    position:relative;
+    /* background-color: aqua; */
+}
+
+.main__header__title{
+    /* background-color: aqua; */
+    margin: 50px;
+    /* haut&bas/ gauche&droite  */
+    /* margin: 500px 200px; */
+    /* haut /droite &et gauche/ bas  */
+    /* margin: 500px 200px 50px; */
+    /* margin-top: 200px; */
+    /* margin-left: 100px; */
+    /* marginright: 100px; */
+    /* margin-bottom: 100px; */
+    /* centre horizontalement un élément de type bloque */
+     /* margin: auto; */
+    /* ajouter une police la police */
+     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+     font-family: "Jacques Francois Shadow", serif;
+     font-weight: 400;
+     font-style: normal;
+
+    }
+
+.main__header__image{
+    /* largeur  */
+    width: 50%;
+    /* arrondir les bords  */
+    border-radius: 190px;
+}
+
+.main__content__slogan{
+    /* background transparent  */
+    background-color: rgba(0, 0, 0, 0.715);
+    color: white;
+    width: 40%;
+    /* va de paire avec une position relative  */
+    position: absolute;
+    left: 500px;
+    bottom:8px;
+    padding: 20px;
+    font-style: italic;
+}
